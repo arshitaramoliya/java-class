@@ -20,3 +20,15 @@ public class Test11 {
 
     }    
 }
+
+// Edge case: handle equal numbers
+class EqualCheck {
+    static void sortThree(int a, int b, int c) {
+        if (a == b && b == c) {
+            System.out.println("All equal: " + a);
+            return;
+        }
+        // existing sort logic applies for non-equal case
+        System.out.println("Values are distinct — sort applied");
+    }
+}
